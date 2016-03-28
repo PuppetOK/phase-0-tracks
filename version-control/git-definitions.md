@@ -7,4 +7,5 @@
 * What is a branch and why would you use one?
 	a branch is pretty much a place where you can make changes to code and not worry about over writing the original code in case you made a mistake. You use different branches so you can make changes to the master code without making it permanent.
 * What is a commit? What makes a good commit message?
+	A commit is when you commit the file to git and have it save that file. A commit file has been edited and needs to be saved. A good commit message is descriptive and says what you changed.
 * What is a merge conflict?
