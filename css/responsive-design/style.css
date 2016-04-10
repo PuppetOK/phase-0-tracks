@@ -3,18 +3,18 @@ blockquote {
   padding: 15px;
   margin-left: 0px;
 }
-
 body{
-  width:960px;
+  max-width: 960px;
 }
 #external-links{
   display: inline-block;
   vertical-align: top;
-  width:200px;
+  width:20%;
 }
 main{
+  vertical-align: top;
   display: inline-block;
-  width: 756px;
+  width: 70%;
 }
 cite {
   display: block;
@@ -41,4 +41,40 @@ figure {
 figcaption {
   font-style: italic;
   text-align: right;
+}
+/* @media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+} */
+@media screen and (min-width: 1200px) {
+	body {
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 500px) {
+  #external-links {
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 3px solid black;
+    padding: 5px;
+    font-size: .8em;
+  }
+
+  #external-links ul li {
+    display: inline;
+    border-right: 1px solid black;
+  }
+
+  #external-links ul li:last-of-type {
+    border-right: none;
+  }
+
+  main {
+    margin-top: 20%;
+  }
 }
