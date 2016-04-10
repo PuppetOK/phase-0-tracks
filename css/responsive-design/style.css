@@ -4,6 +4,18 @@ blockquote {
   margin-left: 0px;
 }
 
+body{
+  width:960px;
+}
+#external-links{
+  display: inline-block;
+  vertical-align: top;
+  width:200px;
+}
+main{
+  display: inline-block;
+  width: 756px;
+}
 cite {
   display: block;
   margin-top: 10px;
