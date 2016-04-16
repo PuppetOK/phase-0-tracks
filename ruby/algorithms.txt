@@ -1,0 +1,35 @@
+Algorithm for elevator
+- while elevator is empty do nothing
+	- If something is infront of elevator doors open doors.
+		- Ask if object is human
+		- If yes
+			- Close doors.
+			- Querery  what floor they would like
+				- Wait for response.
+			- If no response open doors.
+				- If the floor number is above current floor say "going up"
+					- Push floor button
+					- close doors
+					- when at floor open doors.
+				- If floor number is below current floor say "going down"
+					- Push floor button
+					- Close doors
+					- When at floor open doors.
+				- If floor number is current floor say "We are on that floor"
+					- Open doors.
+		- If no response when asked if human do nothing.
+
+
+Algorithm for riding my bike
+	- Put each hand on the handle bars
+	- Put leg over bike so bike is in between legs
+	- lift right foot to peddle
+	- Push down on peddle with right foot
+	- Lift left foot off ground
+	- Put left foot on left peddle
+	- sit down on seat
+	- push down with left foot on peddle
+	- push down on right peddle with right foot
+	- make sure both hands are on hadle bars
+	
+
