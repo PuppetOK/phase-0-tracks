@@ -33,9 +33,30 @@ def decrypt(password)
     puts password
 end
 
-encrypt("abc")
-encrypt("zed")
-decrypt("bcd")
-decrypt("afe")
+#ask the user if they want to encrypt or decrypt a password
+puts "Would you like to encrypt or decrypt a password? (encrypt/decrypt)"
+answer = gets.chomp
+#if the answer is encrypt.
+if answer == "encrypt"
+	#ask them for input as a password.
+    puts "Password to be decrypted, please"
+    #takes the user input and runs it through the encrypt code and prints it to the screen.
+    puts encrypt(gets.chomp)
+#if the answer is decrypt.
+elsif answer == "decrypt"
+	#asks for user input to decrypt
+    puts "Password to be decrypted, please"
+    #takes the user input and runs it through the decrypt method. (doesn't have the puts statement cause the method already has it.).
+    decrypt(gets.chomp)
+#if anythign else is inputted other than encrypt of decrypt
+else
+	#prints this to the screen.
+    puts "Incompatible input: self-destruct initiated. Goodbye."
+end
 
-decrypt(encrypt("swordfish"))
+#puts encrypt("abc")
+#puts encrypt("zed")
+#decrypt("bcd")
+#decrypt("afe")
+
+#decrypt(encrypt("swordfish"))
