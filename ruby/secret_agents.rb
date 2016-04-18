@@ -3,7 +3,7 @@
 # While the value of index is less than the length of the password
 # Set the value of password[index] to the next one
 # Add a value to index and loop.
-# Print out the now encrypted passwo
+# if the password has an ending of ab replace it with just a (This is a workaround because it originally would post a+b if the program was asked to encrypt "z")
 
 def encrypt(password)
     index = 0
@@ -11,7 +11,7 @@ def encrypt(password)
     password[index] = password[index].next!
     index += 1
     end
-    puts "#{password}"
+    password = password.gsub(/ab/ , "a")
 end
 
 # Making a Decrypt algorithm
@@ -32,3 +32,10 @@ def decrypt(password)
     end
     puts password
 end
+
+encrypt("abc")
+encrypt("zed")
+decrypt("bcd")
+decrypt("afe")
+
+decrypt(encrypt("swordfish"))
