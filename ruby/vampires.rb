@@ -12,6 +12,18 @@ employees_processed = 0
 		garlic_bread = gets.chomp
 		puts "Would you like to enroll in the company's insurance?"
 		insurance = gets.chomp
+
+		employee_allergies = nil
+		until employee_allergies == "done"
+			puts "Please list allergies one at a time, when finished type 'done' (no quotes)."
+			employee_allergies = gets.chomp
+			if employee_allergies == "sunshine"
+				correct_age = false
+				likes_garlic = false
+				health_insurance_wanted = true
+				employee_allergies = "done"
+			end
+		end
 		
 		time = Time.new
 		if time.year - vamp_age == vampire_yearborn
@@ -58,4 +70,5 @@ employees_processed = 0
 			puts "Results inconclusive."
 	end 
 		employees_processed += 1
+		puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 end
