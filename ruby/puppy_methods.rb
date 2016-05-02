@@ -60,7 +60,7 @@ sport.least_favorite_sport("Curling")
 store_array = []
 50.times do
   store_array << Sport.new
-  p store_array
+  puts store_array
 end 
 
 store_array.each do |instances|
