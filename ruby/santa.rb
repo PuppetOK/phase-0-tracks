@@ -27,8 +27,8 @@ class Santa
   end
     
 end
-test1 = Santa.new("white", "white")
-p test1.speak
-p test1.eat_milk_and_cookies("snickerdoodle")
-puts test1.reindeer_ranking
-puts test1.age(12)
+santa = Santa.new("male", "white")
+p santa.speak
+p santa.eat_milk_and_cookies("snickerdoodle")
+puts santa.reindeer_ranking
+puts santa.age(12)
