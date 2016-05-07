@@ -1,3 +1,12 @@
+
+/*
+	1. Declare Variable
+	2. make function named reverse and give it a the variable as the parameter.
+	3. Take the string and split it by each letter
+	4. use the reverse method with .reverse
+	5. join the now reversed letters back together.
+	6. get it to print out to the log using console.log.
+*/
 var reversedString;
 
 
