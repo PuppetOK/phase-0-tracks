@@ -9,14 +9,16 @@
 */
 var reversedString;
 
-
-
 function reverse(reversedString){
-	
 	console.log(reversedString.split("").reverse().join(""));
+}
+
+helloStringReversed = reverse("hello String");
+
+if (1 == 1){
+  console.log(helloStringReversed);
 }
 
 reverse("There is One");
 reverse("HELLO");
-reverse("Hello World!")
-reverse("This is a string reversed.")
+reverse("This is a string reversed.");
