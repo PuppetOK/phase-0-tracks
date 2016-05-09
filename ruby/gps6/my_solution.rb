@@ -95,3 +95,18 @@ end
 #=======================================================================
 # Reflection Section
 
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# The differences between the syntax of the two hashes was one used the '=>' syntax to assign a value to a key, which is the old method. The other version was using the keys as a symbol using a colon.
+
+# What does require_relative do? How is it different from require?
+#require_relative from close to by (current directory)
+#require will search from farther away. (third-party libraries)
+
+# What are some ways to iterate through a hash?
+#You can use the .each method to iterate through a hashs keys and values.
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+#All of the variables in virus_effects were already declared as instance variables so they didn't need to be added as perameters.
+
+# What concept did you most solidify in this challenge?
+#iterating over hashes. 
