@@ -6,3 +6,10 @@ names.push("Mr.Long-legs");
 
 console.log(colors);
 console.log(names);
+
+horseColors = {};
+
+for (var i = 0; i < colors.length; i++){
+	horseColors[names[i]] = colors[i];
+}
+console.log(horseColors);
