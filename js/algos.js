@@ -12,4 +12,4 @@ function longest_phrase(array){
 	return array[lengthofphrase.indexOf(longestPhrase)];
 }
 
-console.log(lengthofphrase(["long phrase", "longest phrase", "longer phrase"]));
+console.log(longest_phrase(["long phrase", "longest phrase", "longer phrase"]));
