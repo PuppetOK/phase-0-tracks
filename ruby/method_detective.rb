@@ -5,6 +5,7 @@
 # committed the crime, add additional calls to prove it.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # "iNvEsTiGaTiOn".<???>
 # => “InVeStIgAtIoN”
 
@@ -40,6 +41,14 @@
  “zom”.insert(2,'0')
 # => “zoom”
 
+=======
+“iNvEsTiGaTiOn”.gsub /..?/, &:capitalize
+# => “InVeStIgAtIoN”
+
+ “zom”.insert(2,'0')
+# => “zoom”
+
+>>>>>>> 57ca3476a6e6556052a757425ac47e7dcb964860
  “enhance”.center(20)
 #=> “    enhance    ”
 
@@ -62,6 +71,7 @@
 # => “Elementary, my dear Watson!”
 
 “z”.ord
+<<<<<<< HEAD
 >>>>>>> added the methods for method_detective file
 # => 122 
 # ascii decimal binary hex conversion
@@ -73,3 +83,10 @@
 “How many times does the letter ‘a’ appear in this string?”.count('a')
 #=> 4
 >>>>>>> added the methods for method_detective file
+=======
+# => 122 
+# ascii decimal binary hex conversion
+
+“How many times does the letter ‘a’ appear in this string?”.count('a')
+#=> 4
+>>>>>>> 57ca3476a6e6556052a757425ac47e7dcb964860
