@@ -44,6 +44,7 @@ function randomWords(number_of_words){
 	}
 	return wordStorage;
 }
+
 // Driver code
 // Release 0 ===================
 
@@ -58,5 +59,6 @@ function randomWords(number_of_words){
 // console.log(matching_keys_and_value(hash, hash2));
 
 // Release 2 ====================
-console.log(randomWords(3));
-console.log(randomWords(5));
+
+// console.log(randomWords(3));
+// console.log(randomWords(5));
