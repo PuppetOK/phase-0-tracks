@@ -1,0 +1,16 @@
+ SELECT * FROM businesses JOIN reviews ON businesses.id = reviews.business_id JOIN users ON users.id = reviews.user_id;
+
+ 5|Plumbing by Janet|1|1|Janet didn't know what a plumber does|5|3|3|Angela|Jolie
+ 6|Sushi World|2|5|Sushi was great|6|4|4|Steven|Wonder
+ 1|Grundy Hollow Wedding Chapel|3|2| It was empty for our wedding|1|3|3|Angela|Jolie
+
+sqlite> SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment FROM businesses JOIN reviews ON businesses.id = reviews.business_id JOIN users ON users.id = reviews.user_id;
+
+Angela|Jolie|Plumbing by Janet|1|Janet didn't know what a plumber does
+Steven|Wonder|Sushi World|5|Sushi was great
+Angela|Jolie|Grundy Hollow Wedding Chapel|2|It was empty for our wedding
+
+
+sqlite> SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment FROM businesses JOIN reviews ON businesses.id = reviews.business_id JOIN users ON users.id = reviews.user_id WHERE businesses.id = 1;
+
+Angela|Jolie|Grundy Hollow Wedding Chapel|2|It was empty for our wedding
